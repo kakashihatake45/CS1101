@@ -1,0 +1,7 @@
+from math import sin, pi
+
+def sin_2t(t):
+    return sin(2*t)
+
+for theta in range(0, 91, 10):
+    print(f"theta: {theta}, sin(2*theta): {sin_2t(theta*pi/180)}")
