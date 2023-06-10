@@ -1,0 +1,15 @@
+from math import factorial
+
+def is_strong_number(num):
+    num_list = [int(i) for i in str(num)]
+    factorial_sum = 0
+    for i in num_list:
+        factorial_sum += factorial(i)
+    return num == factorial_sum
+
+strong_numbers = []
+for num in range(1, 100001):
+    if is_strong_number(num):
+        strong_numbers.append(num)
+
+print(strong_numbers)
