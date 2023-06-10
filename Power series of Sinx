@@ -1,0 +1,17 @@
+a = []
+from math import *
+p = float(input("tolerance = :"))##enter tolerance = 0.0001
+term = pi/2
+s= 0
+n = 1
+a.append(term)
+exact = sin(pi/2)
+print("exact value of sin(pi/2) is",sin(pi/2))
+while abs(s-exact)>p:
+    s += term
+    term = term*(((pi/2)**2)*(-1)/((2*n)*(2*n+1)))
+    n = n+1
+    a.append(term)
+print("The computed value of the series is:",s)
+print("The differace between the computed value and the exact value is",s-exact)
+print("The number of terms in the series",len(a)-1)##last term in the list will not be in the series
