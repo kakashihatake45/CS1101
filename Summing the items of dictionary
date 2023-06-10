@@ -1,0 +1,15 @@
+my_dict = {'a': 100, 'b': 200, 'c': 300}
+
+# for loop
+total = 0
+for value in my_dict.values():
+    total += value
+print(total)
+
+# Using a list comprehension
+total = sum([value for value in my_dict.values()])
+print(total)
+
+# Using sum()
+total = sum(my_dict.values())
+print(total)
