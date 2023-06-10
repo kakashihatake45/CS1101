@@ -1,0 +1,4 @@
+from math import *
+r = float(input("radius of the sphere=:"))
+v = (4*pi*(r**3))/3
+print("the volume of the sphere upto 1,2,3,4 decimal places are respectively {0:5.1f},{0:5.2f},{0:5.3f},{0:5.4f},".format(v))
