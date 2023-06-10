@@ -1,0 +1,19 @@
+a = []
+from math import *
+p = float(input("tolerance = :"))##enter tolerance = 0.0001
+term = 1
+s= 0
+n = 1
+a.append(term)
+exact = exp(pi)
+print("exact value of e^pi is",exp(pi))
+while abs(s-exact)>p:
+    s += term
+    term = term*(pi/n)
+    n = n+1
+    a.append(term)
+print(a)
+print("The computed value of the series is:",s)
+print("The differace between the computed value and the exact value is",s-exact)
+print("The number of terms in the series",len(a)-1)##last term in the list is defined after the sum
+    
