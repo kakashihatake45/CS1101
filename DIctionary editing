@@ -1,0 +1,9 @@
+squares = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+for i in range(6,10):
+    squares[i] = i*i
+
+print(squares)
+
+first_key = next(iter(squares))
+print(squares.pop(first_key))
